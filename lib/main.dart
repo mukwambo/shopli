@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:shopli/common/utils/environment.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  /// Load the correct environment file based on the build mode
+  await dotenv.load(fileName: Environment.fileName);
   runApp(const MyApp());
 }
 
@@ -49,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('You have pushed the button this many times:'),
+             Text(Environment.appBaseUrl),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
