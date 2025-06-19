@@ -4,8 +4,8 @@ import 'package:go_router/go_router.dart';
 import 'package:shopli/common/widgets/reusable_text.dart';
 
 import '../../const/constants.dart';
-import '../utils/kcolors.dart';
-import '../utils/kstrings.dart';
+import '../utils/colors.dart';
+import '../utils/strings.dart';
 import 'app_style.dart';
 import 'custom_button.dart';
 
@@ -24,13 +24,13 @@ Future<dynamic> loginBottomSheet(BuildContext context) {
             ),
             Center(
                 child: ReusableText(
-                    text: AppText.kLogin,
-                    style: appStyle(16, Kolors.kPrimary, FontWeight.w500))),
+                    text: BTexts.kLogin,
+                    style: appStyle(16, BColors.kPrimary, FontWeight.w500))),
             SizedBox(
               height: 10.h,
             ),
             Divider(
-              color: Kolors.kGrayLight,
+              color: BColors.kGrayLight,
               thickness: 0.5.h,
             ),
             SizedBox(
@@ -38,8 +38,8 @@ Future<dynamic> loginBottomSheet(BuildContext context) {
             ),
             Center(
                 child: ReusableText(
-                    text: AppText.kLoginText,
-                    style: appStyle(14, Kolors.kGray, FontWeight.w500))),
+                    text: BTexts.kLoginText,
+                    style: appStyle(14, BColors.kGray, FontWeight.w500))),
             SizedBox(
               height: 20.h,
             ),

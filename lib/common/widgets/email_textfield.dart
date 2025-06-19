@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../utils/kcolors.dart';
+import '../utils/colors.dart';
 import 'app_style.dart';
 
 class EmailTextField extends StatelessWidget {
@@ -39,31 +39,31 @@ class EmailTextField extends StatelessWidget {
             return null;
           }
         },
-        style: appStyle(12, Kolors.kDark, FontWeight.normal),
+        style: appStyle(12, BColors.kDark, FontWeight.normal),
         decoration: InputDecoration(
           hintText: hintText,
           prefixIcon: prefixIcon,
           isDense: true,
           contentPadding: const EdgeInsets.all(6),
 
-          hintStyle: appStyle(12, Kolors.kGray, FontWeight.normal),
+          hintStyle: appStyle(12, BColors.kGray, FontWeight.normal),
           // contentPadding: EdgeInsets.only(left: 24),
           errorBorder:  OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(radius??12))),
           focusedBorder:  OutlineInputBorder(
-              borderSide: const BorderSide(color: Kolors.kPrimary, width: 0.5),
+              borderSide: const BorderSide(color: BColors.kPrimary, width: 0.5),
               borderRadius: BorderRadius.all(Radius.circular(radius??12))),
           focusedErrorBorder:  OutlineInputBorder(
               borderSide: const BorderSide(color: Colors.red, width: 0.5),
               borderRadius: BorderRadius.all(Radius.circular(radius??12))),
           disabledBorder:  OutlineInputBorder(
-              borderSide: const BorderSide(color: Kolors.kGray, width: 0.5),
+              borderSide: const BorderSide(color: BColors.kGray, width: 0.5),
               borderRadius: BorderRadius.all(Radius.circular(radius??12))),
           enabledBorder:  OutlineInputBorder(
-              borderSide: const BorderSide(color: Kolors.kGray, width: 0.5),
+              borderSide: const BorderSide(color: BColors.kGray, width: 0.5),
               borderRadius: BorderRadius.all(Radius.circular(radius??12))),
           border:  OutlineInputBorder(
-            borderSide: const BorderSide(color: Kolors.kPrimary, width: 0.5),
+            borderSide: const BorderSide(color: BColors.kPrimary, width: 0.5),
             borderRadius: BorderRadius.all(
               Radius.circular(radius??12),
             ),

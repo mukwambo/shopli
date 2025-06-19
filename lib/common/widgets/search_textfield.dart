@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../utils/kcolors.dart';
+import '../utils/colors.dart';
 import 'app_style.dart';
 
 class SearchTextField extends StatelessWidget {
@@ -40,30 +40,30 @@ class SearchTextField extends StatelessWidget {
             return null;
           }
         },
-        style: appStyle(12, Kolors.kDark, FontWeight.normal),
+        style: appStyle(12, BColors.kDark, FontWeight.normal),
         decoration: InputDecoration(
           hintText: hintText,
           prefixIcon: const Icon(Icons.search),
           isDense: true,
           contentPadding: const EdgeInsets.all(6),
-          hintStyle: appStyle(12, Kolors.kDark, FontWeight.normal),
+          hintStyle: appStyle(12, BColors.kDark, FontWeight.normal),
           errorBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: Colors.red, width: 0.7),
               borderRadius: BorderRadius.all(Radius.circular(16))),
           focusedBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Kolors.kPrimary, width: 0.7),
+              borderSide: BorderSide(color: BColors.kPrimary, width: 0.7),
               borderRadius: BorderRadius.all(Radius.circular(16))),
           focusedErrorBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: Colors.red, width: 0.7),
               borderRadius: BorderRadius.all(Radius.circular(16))),
           disabledBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Kolors.kDark, width: 0.7),
+              borderSide: BorderSide(color: BColors.kDark, width: 0.7),
               borderRadius: BorderRadius.all(Radius.circular(16))),
           enabledBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Kolors.kDark, width: 0.7),
+              borderSide: BorderSide(color: BColors.kDark, width: 0.7),
               borderRadius: BorderRadius.all(Radius.circular(16))),
           border: const OutlineInputBorder(
-            borderSide: BorderSide(color: Kolors.kPrimary, width: 0.7),
+            borderSide: BorderSide(color: BColors.kPrimary, width: 0.7),
             borderRadius: BorderRadius.all(
               Radius.circular(16),
             ),

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '../utils/kcolors.dart';
+import '../utils/colors.dart';
 import 'app_style.dart';
 
 void showErrorPopup(BuildContext context, String errorMessage, String? title,
@@ -13,7 +13,7 @@ void showErrorPopup(BuildContext context, String errorMessage, String? title,
           title ?? 'Error',
           style: appStyle(
             18.0,
-            Kolors.kGrayLight,
+            BColors.kGrayLight,
             FontWeight.bold,
           ),
         ),

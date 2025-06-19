@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../const/constants.dart';
-import '../utils/kcolors.dart';
+import '../utils/colors.dart';
 import 'custom_button.dart';
 
 Future<dynamic> logoutBottomSheet(BuildContext context) {
@@ -22,8 +22,8 @@ Future<dynamic> logoutBottomSheet(BuildContext context) {
                 children: [
                   GradientBtn(
                     text: "Cancel",
-                    borderColor: Kolors.kDark,
-                    btnColor: Kolors.kWhite,
+                    borderColor: BColors.kDark,
+                    btnColor: BColors.kWhite,
                     onTap: () => Navigator.pop(context),
                     btnHieght: 35.h,
                     radius: 16,

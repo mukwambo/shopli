@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
-import '../utils/kcolors.dart';
+import '../utils/colors.dart';
 import 'app_style.dart';
 
 Future<dynamic> showHelpCenterBottomSheet(BuildContext context) {
@@ -25,7 +25,7 @@ Future<dynamic> showHelpCenterBottomSheet(BuildContext context) {
                 'Fashion App Help Center',
                 style: appStyle(
                   18.0,
-                  Kolors.kPrimary,
+                  BColors.kPrimary,
                   FontWeight.bold,
                 ),
               ),
@@ -35,7 +35,7 @@ Future<dynamic> showHelpCenterBottomSheet(BuildContext context) {
               Text(
                 'We\'re here to help! Find answers to frequently asked questions or contact our support team.',
                 textAlign: TextAlign.center,
-                style: appStyle(16.0, Kolors.kDark, FontWeight.normal),
+                style: appStyle(16.0, BColors.kDark, FontWeight.normal),
               ),
               SizedBox(height: 15.h),
 
@@ -50,7 +50,7 @@ Future<dynamic> showHelpCenterBottomSheet(BuildContext context) {
                 title: const Text('Can I return an item?'),
                 trailing: const Icon(
                   Icons.keyboard_arrow_right,
-                  color: Kolors.kGray,
+                  color: BColors.kGray,
                 ),
                 onTap: () {
                   // Handle FAQ tap (open details page or show answer)
@@ -61,7 +61,7 @@ Future<dynamic> showHelpCenterBottomSheet(BuildContext context) {
                 title: const Text('How do I track my order?'),
                 trailing: const Icon(
                   Icons.keyboard_arrow_right,
-                  color: Kolors.kGray,
+                  color: BColors.kGray,
                 ),
                 onTap: () {
                   // Handle FAQ tap (open details page or show answer)

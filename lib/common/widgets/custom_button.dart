@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shopli/common/widgets/reusable_text.dart';
 
-import '../utils/kcolors.dart';
+import '../utils/colors.dart';
 import 'app_style.dart';
 
 class GradientBtn extends StatelessWidget {
@@ -31,14 +31,14 @@ class GradientBtn extends StatelessWidget {
         height: btnHieght ?? 25.h,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(radius??6),
-          color: btnColor?? Kolors.kPrimaryLight,
-          border: Border.all(width: 0.5.h, color:borderColor?? Kolors.kWhite),
+          color: btnColor?? BColors.kPrimaryLight,
+          border: Border.all(width: 0.5.h, color:borderColor?? BColors.kWhite),
         ),
         child: Center(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 3.w),
             child: ReusableText(
-                text: text, style: appStyle(textSize??13, borderColor??Kolors.kWhite, FontWeight.w500)),
+                text: text, style: appStyle(textSize??13, borderColor??BColors.kWhite, FontWeight.w500)),
           ),
         ),
       ),

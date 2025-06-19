@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
-import 'package:provider/provider.dart';
 import 'package:shopli/common/widgets/reusable_text.dart';
-
 import '../../const/constants.dart';
-import '../services/storage.dart';
-import '../utils/kcolors.dart';
-import '../utils/kstrings.dart';
+import '../utils/colors.dart';
+import '../utils/strings.dart';
 import 'app_style.dart';
 import 'custom_button.dart';
 
@@ -25,13 +21,13 @@ Future<dynamic> logoutBottomSheet(BuildContext context) {
             ),
             Center(
                 child: ReusableText(
-                    text: AppText.kLogout,
-                    style: appStyle(16, Kolors.kPrimary, FontWeight.w500))),
+                    text: BTexts.kLogout,
+                    style: appStyle(16, BColors.kPrimary, FontWeight.w500))),
             SizedBox(
               height: 10.h,
             ),
             Divider(
-              color: Kolors.kGrayLight,
+              color: BColors.kGrayLight,
               thickness: 0.5.h,
             ),
             SizedBox(
@@ -39,8 +35,8 @@ Future<dynamic> logoutBottomSheet(BuildContext context) {
             ),
             Center(
                 child: ReusableText(
-                    text: AppText.kLogoutText,
-                    style: appStyle(14, Kolors.kGray, FontWeight.w500))),
+                    text: BTexts.kLogoutText,
+                    style: appStyle(14, BColors.kGray, FontWeight.w500))),
             SizedBox(
               height: 20.h,
             ),
@@ -51,8 +47,8 @@ Future<dynamic> logoutBottomSheet(BuildContext context) {
                 children: [
                   GradientBtn(
                     text: "Cancel",
-                    borderColor: Kolors.kDark,
-                    btnColor: Kolors.kWhite,
+                    borderColor: BColors.kDark,
+                    btnColor: BColors.kWhite,
                     onTap: () => Navigator.pop(context),
                     btnHieght: 35.h,
                     radius: 16,

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:shopli/const/resource.dart';
-import '../common/utils/kcolors.dart';
+import '../common/utils/colors.dart';
 
 LinearGradient kGradient = const LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
   colors: [
-    Kolors.kPrimaryLight,
-    Kolors.kWhite,
-    Kolors.kPrimary,
+    BColors.kPrimaryLight,
+    BColors.kWhite,
+    BColors.kPrimary,
   ],
 );
 
@@ -16,9 +16,9 @@ LinearGradient kPGradient = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
   colors: [
-    Kolors.kPrimaryLight,
-    Kolors.kPrimaryLight.withOpacity(0.7),
-    Kolors.kPrimary,
+    BColors.kPrimaryLight,
+    BColors.kPrimaryLight.withValues(alpha: 0.7),
+    BColors.kPrimary,
   ],
 );
 
@@ -26,8 +26,8 @@ LinearGradient kBtnGradient = const LinearGradient(
   begin: Alignment.bottomLeft,
   end: Alignment.bottomRight,
   colors: [
-    Kolors.kPrimaryLight,
-    Kolors.kWhite,
+    BColors.kPrimaryLight,
+    BColors.kWhite,
   ],
 );
 

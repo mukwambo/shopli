@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:go_router/go_router.dart';
-import '../utils/kcolors.dart';
+import '../utils/colors.dart';
 
 class AppBackButton extends StatelessWidget {
   const AppBackButton({
@@ -19,7 +19,7 @@ class AppBackButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap ?? () => GoRouter.of(context).pop(),
       child: Icon(AntDesign.leftcircle,
-          color: color ?? Kolors.kPrimary, size: size ?? 24),
+          color: color ?? BColors.kPrimary, size: size ?? 24),
     );
   }
 }

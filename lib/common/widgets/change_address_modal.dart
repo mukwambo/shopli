@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shopli/common/widgets/reusable_text.dart';
 
 import '../../const/constants.dart';
-import '../utils/kcolors.dart';
-import '../utils/kstrings.dart';
+import '../utils/colors.dart';
+import '../utils/strings.dart';
 import 'app_style.dart';
 
 Future<dynamic> changeAddressBottomSheet(BuildContext context) {
@@ -23,21 +23,21 @@ Future<dynamic> changeAddressBottomSheet(BuildContext context) {
             ),
             Center(
                 child: ReusableText(
-                    text: AppText.kCheckoutAddress,
-                    style: appStyle(16, Kolors.kPrimary, FontWeight.w500))),
+                    text: BTexts.kCheckoutAddress,
+                    style: appStyle(16, BColors.kPrimary, FontWeight.w500))),
             SizedBox(
               height: 10.h,
             ),
             Divider(
-              color: Kolors.kGrayLight,
+              color: BColors.kGrayLight,
               thickness: 0.5.h,
             ),
             SizedBox(
               height: 10.h,
             ),
             ReusableText(
-                text: AppText.kCheckoutAddressText,
-                style: appStyle(13, Kolors.kGray, FontWeight.w500)),
+                text: BTexts.kCheckoutAddressText,
+                style: appStyle(13, BColors.kGray, FontWeight.w500)),
             SizedBox(
               height: 10.h,
             ),

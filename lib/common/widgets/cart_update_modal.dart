@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '../utils/kcolors.dart';
+import '../utils/colors.dart';
 import 'app_style.dart';
 
 void showCartPopup(BuildContext context) {
@@ -12,7 +12,7 @@ void showCartPopup(BuildContext context) {
           'Update Cart Item Qauntity',
           style: appStyle(
             18.0,
-            Kolors.kGrayLight,
+            BColors.kGrayLight,
             FontWeight.bold,
           ),
         ),

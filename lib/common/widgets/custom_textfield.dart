@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../utils/kcolors.dart';
+import '../utils/colors.dart';
 import 'app_style.dart';
 
 
@@ -31,7 +31,7 @@ class CustomTextField extends StatelessWidget {
       decoration: BoxDecoration(
         border: Border.all(
           width: 0.3,
-          color: Kolors.kGray,
+          color: BColors.kGray,
         ),
         borderRadius: const BorderRadius.all(Radius.circular(9))
       ),
@@ -42,11 +42,11 @@ class CustomTextField extends StatelessWidget {
         decoration: InputDecoration(
             hintText: hintText,
             suffixIcon: suffixIcon,
-            hintStyle: appStyle(11, Kolors.kGray, FontWeight.normal),
+            hintStyle: appStyle(11, BColors.kGray, FontWeight.normal),
             border: InputBorder.none),
         controller: controller,
         cursorHeight: 20,
-        style: appStyle(11, Kolors.kDark, FontWeight.normal),
+        style: appStyle(11, BColors.kDark, FontWeight.normal),
         validator: validator,
       ),
     );
