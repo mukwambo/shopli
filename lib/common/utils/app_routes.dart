@@ -1,8 +1,7 @@
-// ignore_for_file: unused_element
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import '../../src/entrypoint/views/entrypoint.dart';
+import '../../src/onboarding/views/onboarding_screen.dart';
 import '../../src/splashscreen/views/splashscreen_page.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
@@ -19,6 +18,10 @@ final GoRouter _router = GoRouter(
     GoRoute(
       path: '/home',
       builder: (context, state) => AppEntryPoint(),
+    ),
+    GoRoute(
+      path: '/onboarding',
+      builder: (context, state) => OnBoardingScreen(),
     ),
   ],
 );

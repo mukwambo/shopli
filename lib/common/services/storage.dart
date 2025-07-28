@@ -18,7 +18,7 @@ class Storage {
     GetStorage().write(key, value);
   }
 
-  bool? getBool(String key) {
+   bool? getBool(String key) {
     return GetStorage().read(key);
   }
 
